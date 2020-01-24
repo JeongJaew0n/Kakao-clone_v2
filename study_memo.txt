@@ -1,0 +1,10 @@
+making a readmefile after creat a repository
+저장소는 따로만들고 push origin과 pull origin을 하면서 fetch(패치,알아서해줌)눌러주면 잘됨.
+
+하라는 대로 하니까됨
+
+2020 1/24
+1.padding은 초록색
+2. box-sizing
+3. li안에 li를 쓰면안돼
+4. css안에서 selector를 붙여쓰면(ex: .name.name2) 동시적용 띄어쓰면 상속관계
