@@ -7,4 +7,4 @@ making a readmefile after creat a repository
 1.padding은 초록색
 2. box-sizing
 3. li안에 li를 쓰면안돼
-4. css안에서 selector를 붙여쓰면(ex: .name.name2) 동시적용 띄어쓰면 상속관계
+4. css안에서 selector를 붙여쓰면(ex: .name.name2) 두 class의 이름이 전부 있어야만 적용. 띄어쓰면 상속관계
