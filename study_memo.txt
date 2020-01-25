@@ -8,3 +8,8 @@ making a readmefile after creat a repository
 2. box-sizing
 3. li안에 li를 쓰면안돼
 4. css안에서 selector를 붙여쓰면(ex: .name.name2) 두 class의 이름이 전부 있어야만 적용. 띄어쓰면 상속관계
+
+1/25
+1.google font
+2. flex는 밑의 요소들을 수평으로 정렬한다 ul태그에 써주면 li들이 있으므로 정렬됨.
+그러나 find.html에서 예를 들어보면 main의 클래스명인 find로 display: flex; 를해주면 find바로 밑의 자식요소인 header태그와 ul태그가 정렬이됨. ㅇㅋ?
