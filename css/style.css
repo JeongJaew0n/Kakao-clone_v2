@@ -28,7 +28,8 @@ a {
 .headers {
   /*status-bar + head*/
   position: fixed;
-  width: 98%;
+  width: 100%;
+  padding-right: 40px;
 }
 
 main {
