@@ -13,3 +13,21 @@ making a readmefile after creat a repository
 1.google font
 2. flex는 밑의 요소들을 수평으로 정렬한다 ul태그에 써주면 li들이 있으므로 정렬됨.
 그러나 find.html에서 예를 들어보면 main의 클래스명인 find로 display: flex; 를해주면 find바로 밑의 자식요소인 header태그와 ul태그가 정렬이됨. ㅇㅋ?
+
+1/29
+1.display: fixed에서 가운데 정렬하는법
+- margin: 0 auto 해주고 left와 right를 0으로 주면됨.
+
+2. chat 안의 input에서 Sned message를 포함하는 내용(content)이
+어느정도 길이(width)를 가지고 있고 그것을 100%로 해주면
+chat__write-column의 input이 차지하고있는 공간을 다 볼 수 있다.
+
+3.chat__wirte-colmn은 justify-content: space-between 에 의해서 각자의 내용(content)
+공간을 부모 width(이 부모 width는 현재 전체화면의 80%를 차지중이다.)
+가 100%로 보았을때 각자 맞게공간을 차지하고 있으나
+원하는 자식에게 width를 할당해주면 해당자녀는 그 퍼센트나 수치만큼
+공간을 가지고 다시 정렬하게 된다.
+
+4. **결국 공간은 정해져있고 적당히 값과 %,단위를 조정해주면서 화면을 맞춰나가자.
+*** 가로를 초과하게 되면 세로로 늘어나는 것 같다.(세로크기를 지정안해줘서
+그런가?)
