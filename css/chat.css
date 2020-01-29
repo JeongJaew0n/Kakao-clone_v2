@@ -1,4 +1,4 @@
-.chat__body {
+.chat__screen {
   background-image: url(../images/BchatBg.png);
   background-attachment: fixed;
   min-height: 100vh;
@@ -40,6 +40,58 @@
   outline: none;
 }
 
-.chat__body .headers {
+.chat__screen .headers {
   background-image: url(../images/BchatBg.png);
+}
+
+.chat__screen .chat__messages {
+  border-top: 1px solid black;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__messages .chat__timestamp {
+  background-color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: rgba(23, 55, 87, 0.1) 0px 15px 35px 0px,
+    rgba(0, 0, 0, 0.07) 0px 5px 15px 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.chat__messages img {
+  width: 35px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.messages {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.messages .message__content {
+  width: 80%;
+}
+
+.incoming-message {
+  align-self: flex-start;
+}
+
+.sent-message {
+  align-self: flex-end;
+}
+
+.messages .message__bubble {
+  background-color: white;
+  box-shadow: rgba(23, 55, 87, 0.1) 0px 15px 35px 0px,
+    rgba(0, 0, 0, 0.07) 0px 5px 15px 0px;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
