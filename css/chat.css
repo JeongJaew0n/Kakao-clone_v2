@@ -74,8 +74,8 @@
 .messages {
   display: flex;
   align-items: flex-start;
-  width: 50%;
   margin-bottom: 20px;
+  /* width: 50%; */
 }
 
 .messages .message__content {
@@ -89,6 +89,11 @@
 .sent-message {
   align-self: flex-end;
 }
+
+/* .sent-message .message__content {
+  display: flex;
+  justify-content: flex-end;
+} */
 
 .messages .message__bubble {
   display: inline-block;
