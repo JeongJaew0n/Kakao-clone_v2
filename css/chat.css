@@ -2,6 +2,7 @@
   background-image: url(../images/BchatBg.png);
   background-attachment: fixed;
   min-height: 100vh;
+  position: relative;
 }
 
 .chat__write {
@@ -45,7 +46,7 @@
 }
 
 .chat__screen .chat__messages {
-  border-top: 1px solid black;
+  border-top: 1px solid #f7f7f7;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -72,8 +73,9 @@
 
 .messages {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 50%;
+  margin-bottom: 20px;
 }
 
 .messages .message__content {
@@ -89,9 +91,25 @@
 }
 
 .messages .message__bubble {
+  display: inline-block;
   background-color: white;
   box-shadow: rgba(23, 55, 87, 0.1) 0px 15px 35px 0px,
     rgba(0, 0, 0, 0.07) 0px 5px 15px 0px;
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+.incoming-message .message__author {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.incoming-message .message__bubble {
+  border-top-left-radius: 0px;
+}
+
+.sent-message .message__bubble {
+  border-bottom-right-radius: 0px;
 }
