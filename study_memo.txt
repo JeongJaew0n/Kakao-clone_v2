@@ -40,3 +40,6 @@ margin - top,bottom 이 적용이 안된다.
 
 2. span으로 했을때 글이 다음줄로 넘어가면 border가 이상하게 적용됨.
 display: block, inline-block 으로 설정해주면 해결.
+
+2/2
+1. sibling??
