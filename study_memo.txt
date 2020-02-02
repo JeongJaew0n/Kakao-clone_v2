@@ -41,5 +41,11 @@ margin - top,bottom 이 적용이 안된다.
 2. span으로 했을때 글이 다음줄로 넘어가면 border가 이상하게 적용됨.
 display: block, inline-block 으로 설정해주면 해결.
 
-2/2
+2/1
 1. sibling??
+
+2/2
+1.trainsition 속성(attribute)에서 ease요소들.
+2.엘리먼트는 <tagname> ~~ </tagname> 이런걸 엘리먼트(한 태그의 시작과종료)
+3.veryvery important, input다음에 div를 줘서 sibling을 사용해서 없애줘야함. sibling은 형제 요소 같은 것.
+4. animation에서 forward는 바뀐상태를 계속 유지해준다는 것.

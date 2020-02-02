@@ -6,30 +6,65 @@
 
 .chat__write--container {
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   margin: 0 auto;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fcfcfc;
-  padding: 0px 20px;
+  /* background-color:  #fcfcfc; */
+  width: 100%;
+  /* padding: 0px 20px; */
   /* box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025); */
 }
 
+@keyframes float {
+  0% {
+    /* transform: translateY(-50px) */
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    /* transform: translateY(-60px); */
+    box-shadow: 0 30px 60px -62px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    /* transform: translateY(-50px); */
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+}
+
 .chat__write {
+  margin: 0 auto;
   bottom: 0px;
   width: 100%;
   border-radius: 0;
   padding: 20px 60px;
   border: none;
   font-size: 14px;
+  transition: width 0.5s ease-in, border-radius 0.5s ease-in,
+    transform 0.5s ease-in;
+}
+
+.chat__write:focus {
+  width: 80%;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  animation: float 2.5s ease-in-out infinite forwards;
 }
 
 .chat__icon-left {
   position: absolute;
+  left: 10px;
 }
 
 .chat__icon-right {
@@ -54,10 +89,6 @@
   width: 100%;
   border: none;
   font-size: 14px;
-}
-
-.chat__write:focus {
-  outline: none;
 }
 
 .chat__icon {
@@ -97,6 +128,9 @@
   width: 35px;
   border-radius: 15px;
   margin-right: 20px;
+  animation: spin 1.7s linear infinite;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
 .messages {
@@ -112,6 +146,15 @@
 
 .incoming-message {
   align-self: flex-start;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
 }
 
 .sent-message {
@@ -150,4 +193,34 @@
   color: #eef2f3;
   border-bottom-right-radius: 0px;
   background-image: linear-gradient(to left, #ffb347, #eea849);
+}
+
+@keyframes incomingAnim {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.incoming-message {
+  animation: incomingAnim 0.5s ease-out forwards;
+}
+
+@keyframes sentAnim {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.sent-message {
+  animation: sentAnim 0.5s ease-out forwards;
 }
